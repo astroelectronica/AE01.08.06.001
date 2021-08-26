@@ -1,0 +1,20 @@
+.title KiCad schematic
+.include "models/XPE_SPICE.lib"
+V1 /IN 0 {VIN}
+D1 /IN /1 XLampXPEwhite
+D3 /1 /2 XLampXPEwhite
+D5 /2 /3 XLampXPEwhite
+D7 /3 /4 XLampXPEwhite
+D9 /4 /5 XLampXPEwhite
+D11 /5 /6 XLampXPEwhite
+D15 /7 0 XLampXPEwhite
+D13 /6 /7 XLampXPEwhite
+D2 /IN /1 XLampXPEwhite
+D4 /1 /2 XLampXPEwhite
+D6 /2 /3 XLampXPEwhite
+D8 /3 /4 XLampXPEwhite
+D10 /4 /5 XLampXPEwhite
+D12 /5 /6 XLampXPEwhite
+D16 /7 0 XLampXPEwhite
+D14 /6 /7 XLampXPEwhite
+.end

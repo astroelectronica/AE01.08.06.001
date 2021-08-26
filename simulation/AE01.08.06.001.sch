@@ -1,0 +1,447 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Xlamp XP-E white 8S2P"
+Date "2020-03-10"
+Rev "1"
+Comp "astroelectronic@"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E5FDFB1
+P 2300 3700
+F 0 "#FLG02" H 2300 3775 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 3873 50  0000 C CNN
+F 2 "" H 2300 3700 50  0001 C CNN
+F 3 "~" H 2300 3700 50  0001 C CNN
+	1    2300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E5FD314
+P 1600 4950
+F 0 "#FLG01" H 1600 5025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 5123 50  0000 C CNN
+F 2 "" H 1600 4950 50  0001 C CNN
+F 3 "~" H 1600 4950 50  0001 C CNN
+	1    1600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5100 1600 4950
+Wire Wire Line
+	2300 5100 1600 5100
+$Comp
+L pspice:0 #GND01
+U 1 1 5E5FCC84
+P 2300 5350
+F 0 "#GND01" H 2300 5250 50  0001 C CNN
+F 1 "0" H 2300 5227 50  0000 C CNN
+F 2 "" H 2300 5350 50  0001 C CNN
+F 3 "~" H 2300 5350 50  0001 C CNN
+	1    2300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 5E5FAC3F
+P 2300 4550
+F 0 "V1" H 2430 4596 50  0000 L CNN
+F 1 "{VIN}" H 2430 4505 50  0000 L CNN
+F 2 "" H 2300 4550 50  0001 C CNN
+F 3 "~" H 2300 4550 50  0001 C CNN
+F 4 "Y" H 2300 4550 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2300 4550 50  0001 L CNN "Spice_Primitive"
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+Text Label 2600 4000 0    50   ~ 0
+IN
+Wire Wire Line
+	2300 4750 2300 5100
+Connection ~ 2300 5100
+Wire Wire Line
+	2300 5100 2300 5350
+Wire Wire Line
+	2300 3700 2300 4000
+Wire Wire Line
+	3200 4000 3000 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D1
+U 1 1 5E63C15B
+P 3350 4000
+F 0 "D1" V 3655 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 3564 4000 50  0000 C CNN
+F 2 "" H 3550 3850 50  0001 L BNN
+F 3 "DS" H 3550 3750 50  0001 L BNN
+F 4 "D" H 3350 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 3350 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3350 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 3350 4000 50  0001 C CNN "Spice_Lib_File"
+	1    3350 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AE01.17.06.000:XLampXPEwhite D3
+U 1 1 5E63D8FD
+P 4050 4000
+F 0 "D3" V 4355 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 4264 4000 50  0000 C CNN
+F 2 "" H 4250 3850 50  0001 L BNN
+F 3 "DS" H 4250 3750 50  0001 L BNN
+F 4 "D" H 4050 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 4050 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4050 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 4050 4000 50  0001 C CNN "Spice_Lib_File"
+	1    4050 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4000 4400 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D5
+U 1 1 5E63E1C3
+P 4750 4000
+F 0 "D5" V 5055 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 4964 4000 50  0000 C CNN
+F 2 "" H 4950 3850 50  0001 L BNN
+F 3 "DS" H 4950 3750 50  0001 L BNN
+F 4 "D" H 4750 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 4750 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4750 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 4750 4000 50  0001 C CNN "Spice_Lib_File"
+	1    4750 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 4000 5100 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D7
+U 1 1 5E63EB37
+P 5450 4000
+F 0 "D7" V 5755 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 5664 4000 50  0000 C CNN
+F 2 "" H 5650 3850 50  0001 L BNN
+F 3 "DS" H 5650 3750 50  0001 L BNN
+F 4 "D" H 5450 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 5450 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5450 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 5450 4000 50  0001 C CNN "Spice_Lib_File"
+	1    5450 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 4000 3700 4000
+Wire Wire Line
+	8750 4000 8600 4000
+Wire Wire Line
+	5600 4000 5800 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D9
+U 1 1 5E64B591
+P 6150 4000
+F 0 "D9" V 6455 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 6364 4000 50  0000 C CNN
+F 2 "" H 6350 3850 50  0001 L BNN
+F 3 "DS" H 6350 3750 50  0001 L BNN
+F 4 "D" H 6150 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 6150 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6150 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 6150 4000 50  0001 C CNN "Spice_Lib_File"
+	1    6150 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 4000 6500 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D11
+U 1 1 5E64B59C
+P 6850 4000
+F 0 "D11" V 7155 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 7064 4000 50  0000 C CNN
+F 2 "" H 7050 3850 50  0001 L BNN
+F 3 "DS" H 7050 3750 50  0001 L BNN
+F 4 "D" H 6850 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 6850 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6850 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 6850 4000 50  0001 C CNN "Spice_Lib_File"
+	1    6850 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AE01.17.06.000:XLampXPEwhite D15
+U 1 1 5E64E608
+P 8250 4000
+F 0 "D15" V 8555 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 8464 4000 50  0000 C CNN
+F 2 "" H 8450 3850 50  0001 L BNN
+F 3 "DS" H 8450 3750 50  0001 L BNN
+F 4 "D" H 8250 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 8250 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8250 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 8250 4000 50  0001 C CNN "Spice_Lib_File"
+	1    8250 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 4000 7900 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D13
+U 1 1 5E64E5FD
+P 7550 4000
+F 0 "D13" V 7855 4000 50  0000 C CNN
+F 1 "XLampXPEwhite" V 7764 4000 50  0000 C CNN
+F 2 "" H 7750 3850 50  0001 L BNN
+F 3 "DS" H 7750 3750 50  0001 L BNN
+F 4 "D" H 7550 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 7550 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7550 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 7550 4000 50  0001 C CNN "Spice_Lib_File"
+	1    7550 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 4000 7200 4000
+$Comp
+L AE01.17.06.000:XLampXPEwhite D2
+U 1 1 5E658991
+P 3350 4500
+F 0 "D2" V 3655 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 3564 4500 50  0000 C CNN
+F 2 "" H 3550 4350 50  0001 L BNN
+F 3 "DS" H 3550 4250 50  0001 L BNN
+F 4 "D" H 3350 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 3350 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3350 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 3350 4500 50  0001 C CNN "Spice_Lib_File"
+	1    3350 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AE01.17.06.000:XLampXPEwhite D4
+U 1 1 5E65899B
+P 4050 4500
+F 0 "D4" V 4355 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 4264 4500 50  0000 C CNN
+F 2 "" H 4250 4350 50  0001 L BNN
+F 3 "DS" H 4250 4250 50  0001 L BNN
+F 4 "D" H 4050 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 4050 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4050 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 4050 4500 50  0001 C CNN "Spice_Lib_File"
+	1    4050 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4500 4400 4500
+$Comp
+L AE01.17.06.000:XLampXPEwhite D6
+U 1 1 5E6589A6
+P 4750 4500
+F 0 "D6" V 5055 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 4964 4500 50  0000 C CNN
+F 2 "" H 4950 4350 50  0001 L BNN
+F 3 "DS" H 4950 4250 50  0001 L BNN
+F 4 "D" H 4750 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 4750 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4750 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 4750 4500 50  0001 C CNN "Spice_Lib_File"
+	1    4750 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 4500 5100 4500
+$Comp
+L AE01.17.06.000:XLampXPEwhite D8
+U 1 1 5E6589B1
+P 5450 4500
+F 0 "D8" V 5755 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 5664 4500 50  0000 C CNN
+F 2 "" H 5650 4350 50  0001 L BNN
+F 3 "DS" H 5650 4250 50  0001 L BNN
+F 4 "D" H 5450 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 5450 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5450 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 5450 4500 50  0001 C CNN "Spice_Lib_File"
+	1    5450 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 4500 3700 4500
+Wire Wire Line
+	5600 4500 5800 4500
+$Comp
+L AE01.17.06.000:XLampXPEwhite D10
+U 1 1 5E6589BD
+P 6150 4500
+F 0 "D10" V 6455 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 6364 4500 50  0000 C CNN
+F 2 "" H 6350 4350 50  0001 L BNN
+F 3 "DS" H 6350 4250 50  0001 L BNN
+F 4 "D" H 6150 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 6150 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6150 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 6150 4500 50  0001 C CNN "Spice_Lib_File"
+	1    6150 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 4500 6500 4500
+$Comp
+L AE01.17.06.000:XLampXPEwhite D12
+U 1 1 5E6589C8
+P 6850 4500
+F 0 "D12" V 7155 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 7064 4500 50  0000 C CNN
+F 2 "" H 7050 4350 50  0001 L BNN
+F 3 "DS" H 7050 4250 50  0001 L BNN
+F 4 "D" H 6850 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 6850 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6850 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 6850 4500 50  0001 C CNN "Spice_Lib_File"
+	1    6850 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AE01.17.06.000:XLampXPEwhite D16
+U 1 1 5E6589D2
+P 8250 4500
+F 0 "D16" V 8555 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 8464 4500 50  0000 C CNN
+F 2 "" H 8450 4350 50  0001 L BNN
+F 3 "DS" H 8450 4250 50  0001 L BNN
+F 4 "D" H 8250 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 8250 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8250 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 8250 4500 50  0001 C CNN "Spice_Lib_File"
+	1    8250 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 4500 7900 4500
+$Comp
+L AE01.17.06.000:XLampXPEwhite D14
+U 1 1 5E6589DD
+P 7550 4500
+F 0 "D14" V 7855 4500 50  0000 C CNN
+F 1 "XLampXPEwhite" V 7764 4500 50  0000 C CNN
+F 2 "" H 7750 4350 50  0001 L BNN
+F 3 "DS" H 7750 4250 50  0001 L BNN
+F 4 "D" H 7550 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "XLampXPEwhite" H 7550 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7550 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XPE_SPICE.lib" H 7550 4500 50  0001 C CNN "Spice_Lib_File"
+	1    7550 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 4500 7200 4500
+Wire Wire Line
+	3200 4500 3000 4500
+Wire Wire Line
+	3000 4500 3000 4000
+Connection ~ 3000 4000
+Wire Wire Line
+	3000 4000 2300 4000
+Wire Wire Line
+	8400 4500 8600 4500
+Wire Wire Line
+	8600 4500 8600 4000
+Connection ~ 8600 4000
+Wire Wire Line
+	8600 4000 8400 4000
+Wire Wire Line
+	3700 4500 3700 4000
+Connection ~ 3700 4500
+Wire Wire Line
+	3700 4500 3900 4500
+Connection ~ 3700 4000
+Wire Wire Line
+	3700 4000 3900 4000
+Wire Wire Line
+	4400 4500 4400 4000
+Connection ~ 4400 4500
+Wire Wire Line
+	4400 4500 4600 4500
+Connection ~ 4400 4000
+Wire Wire Line
+	4400 4000 4600 4000
+Wire Wire Line
+	5100 4500 5100 4000
+Connection ~ 5100 4500
+Wire Wire Line
+	5100 4500 5300 4500
+Connection ~ 5100 4000
+Wire Wire Line
+	5100 4000 5300 4000
+Wire Wire Line
+	5800 4500 5800 4000
+Connection ~ 5800 4500
+Wire Wire Line
+	5800 4500 6000 4500
+Connection ~ 5800 4000
+Wire Wire Line
+	5800 4000 6000 4000
+Wire Wire Line
+	6500 4500 6500 4000
+Connection ~ 6500 4500
+Wire Wire Line
+	6500 4500 6700 4500
+Connection ~ 6500 4000
+Wire Wire Line
+	6500 4000 6700 4000
+Wire Wire Line
+	7200 4500 7200 4000
+Connection ~ 7200 4500
+Wire Wire Line
+	7200 4500 7400 4500
+Connection ~ 7200 4000
+Wire Wire Line
+	7200 4000 7400 4000
+Wire Wire Line
+	7900 4500 7900 4000
+Connection ~ 7900 4500
+Wire Wire Line
+	7900 4500 8100 4500
+Connection ~ 7900 4000
+Wire Wire Line
+	7900 4000 8100 4000
+Text Label 3750 4000 0    50   ~ 0
+1
+Text Label 4450 4000 0    50   ~ 0
+2
+Text Label 5150 4000 0    50   ~ 0
+3
+Text Label 5850 4000 0    50   ~ 0
+4
+Text Label 6550 4000 0    50   ~ 0
+5
+Text Label 7250 4000 0    50   ~ 0
+6
+Text Label 7950 4000 0    50   ~ 0
+7
+Connection ~ 2300 4000
+Wire Wire Line
+	2300 4000 2300 4350
+$Comp
+L pspice:0 #GND02
+U 1 1 5E66CD3A
+P 8750 4250
+F 0 "#GND02" H 8750 4150 50  0001 C CNN
+F 1 "0" H 8750 4127 50  0000 C CNN
+F 2 "" H 8750 4250 50  0001 C CNN
+F 3 "~" H 8750 4250 50  0001 C CNN
+	1    8750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4000 8750 4250
+$EndSCHEMATC
